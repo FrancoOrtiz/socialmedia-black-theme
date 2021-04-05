@@ -127,6 +127,7 @@ h2{
 }
 
 .contain__overview{
+    border-radius: 4px;
     background-color: var(--lightgrayishblue);
     padding-top: 20px;
     padding-bottom: 20px;
@@ -145,13 +146,13 @@ h2{
 }
 
 .second__contain{
-        padding-top: 20px;
-        width: 90%;
-        margin: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+    padding-top: 20px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .overview__text{
@@ -186,6 +187,8 @@ h2{
 }
 
 .dark__button{
+    outline: none;
+    cursor: pointer;
     margin-bottom: 20px;
     width: 48px;
     height: 24px;
@@ -198,6 +201,7 @@ h2{
     width: 45%;
     height: 100%;
     border-radius: 50%;
+    transition: all 0.5s ease;
 }
 
 .circle__off{
@@ -227,10 +231,14 @@ h2{
 }
 
 .boxes-whitetheme{
+    transition: all 0.5s ease;
+    cursor: pointer;
     background-color: var(--lightgrayishblue);
 }
 
 .boxes-darktheme{
+    transition: all 0.5s ease;
+    cursor: pointer;
     background-color: rgb(37, 43, 67);
 }
 
@@ -242,6 +250,112 @@ h2{
     color: var(--white);
 }
 
-@media screen and(min-width: 768px){
+@media screen and (min-width: 1000px){
+    body{
+        width: 75%;
+        height: 105vh;
+    }
     
+    .followers{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+
+    h1{
+        font-size: 30px;
+        margin-bottom: 5px;
+    }
+
+    .textheader{
+        font-size: 15px;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .button__contain{
+        margin-bottom: 25px;
+        border-top: 0;
+    }
+
+    .button__contain p{
+        margin-right: 15px;
+    }
+
+    .contain__followers{
+        margin-top: 0;
+        width: 23%;
+    }
+
+    .followerstext{
+        font-size: 13px;
+    }
+
+    .today{
+        font-size: 13px
+    }
+
+    .overview{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first__row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .second__row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .contain__overview{
+        width: 23%;
+    }
+
+    .number__followers{
+        font-size: 55px;
+    }
+
+    .first__contain{
+        width: 80%;
+    }
+
+    .second__contain{
+        width: 80%;
+    }
+
+    .overview__text{
+        font-size: 15px;
+    }
+
+    .number__overview{
+        font-size: 36px;
+    }
+
+    .contain__overview{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .dark__button__off{
+        background-image: linear-gradient(to right, #528bb7, #009ec4, #00b0c1, #00c0ad, #36cc8d);
+    }
+
+    .boxes-whitetheme:hover{
+        background-color: rgb(225, 227, 240);
+    }
+
+    .boxes-darktheme:hover{
+        background-color: rgb(51, 58, 86);
+    }
 }
