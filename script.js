@@ -14,8 +14,6 @@ $button.addEventListener("click", () => {
     $bodyTheme.classList.toggle("body-whitetheme");
     $bodyTheme.classList.toggle("body-darktheme");
 
-    console.log($boxes);
-
     for($box of $boxes){
         $box.classList.toggle("boxes-whitetheme");
         $box.classList.toggle("boxes-darktheme"); 
