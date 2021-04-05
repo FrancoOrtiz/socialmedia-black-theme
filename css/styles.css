@@ -250,6 +250,14 @@ h2{
     color: var(--white);
 }
 
+.boxes-whitetheme:hover{
+    background-color: rgb(225, 227, 240);
+}
+
+.boxes-darktheme:hover{
+    background-color: rgb(51, 58, 86);
+}
+
 @media screen and (min-width: 1000px){
     body{
         width: 75%;
@@ -349,13 +357,5 @@ h2{
 
     .dark__button__off{
         background-image: linear-gradient(to right, #528bb7, #009ec4, #00b0c1, #00c0ad, #36cc8d);
-    }
-
-    .boxes-whitetheme:hover{
-        background-color: rgb(225, 227, 240);
-    }
-
-    .boxes-darktheme:hover{
-        background-color: rgb(51, 58, 86);
     }
 }
